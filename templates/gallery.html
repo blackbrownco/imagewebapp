@@ -1,0 +1,44 @@
+<!-- gallery.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Gallery</title>
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .image {
+            margin: 10px;
+        }
+        .image img {
+            width: 200px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>User Gallery</h1>
+    <div class="gallery">
+        {% for image in user_images %}
+            <div class="image">
+                <img src="{{ url_for('static', filename='uploads/' + image[0]) }}" alt="{{ image[0] }}">
+                <a href="{{ url_for('delete', filename=image[0]) }}">Delete</a>
+            </div>
+        {% endfor %}
+    </div>
+    <form method="POST" enctype="multipart/form-data" action="{{ url_for('upload') }}">
+        {{ form.csrf_token }}
+        <div>
+            {{ form.image.label }} {{ form.image }}
+        </div>
+        <div>
+            {{ form.submit }}
+        </div>
+    </form>
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>

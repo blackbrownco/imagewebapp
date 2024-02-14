@@ -1,0 +1,37 @@
+<!-- register.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style-register.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet">
+    <title>User Registration</title>
+</head>
+<body>
+    <div class="slideshow">
+        {% for image in images %}
+            <img src="{{ url_for('static', filename=image) }}" alt="Slideshow Image" id="slideshow-image">
+        {% endfor %}
+    </div>
+
+    <h1>User Registration</h1>
+
+    <form method="POST">
+        {{ form.csrf_token }}
+        <div>
+            {{ form.email.label }} {{ form.email }}
+        </div>
+        <div>
+            {{ form.username.label }} {{ form.username }}
+        </div>
+        <div>
+            {{ form.password.label }} {{ form.password }}
+        </div>
+        <div>
+            {{ form.submit }}
+        </div>
+    </form>
+</body>
+</html>

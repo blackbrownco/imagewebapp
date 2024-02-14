@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="slideshow">
+        {% for image in images %}
+            <img src="{{ url_for('static', filename=image) }}" alt="Slideshow Image" id="slideshow-image">
+        {% endfor %}
+    </div>
+
+    <div class="login-container">
+        <h1 id="title">AltoPix</h1>
+        <div class="buttons-container">
+            <a class="login-btn" href="{{ url_for('login') }}">Login</a>
+            <a class="signup-btn" href="{{ url_for('register') }}">Sign Up</a>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

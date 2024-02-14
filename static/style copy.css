@@ -1,0 +1,80 @@
+body {
+    background-color: #000; /* Dark background */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideshow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    animation: slideshow 10s infinite; /* Slower slideshow animation */
+}
+
+.slideshow img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out; /* Smooth transition */
+}
+
+.slideshow img:first-child {
+    display: block; /* Show the first image initially */
+}
+
+@keyframes slideshow {
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+    95% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.login-container {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#title {
+    font-family: 'PT Sans Narrow', sans-serif; 
+    font-size: 56px; 
+    color: #fff; 
+    margin-bottom: 20px; 
+}
+
+.login-form {
+    background-color: transparent; 
+    padding: 15px; 
+    border: none; 
+    margin: 15px auto;
+    width: 80%;
+}
+
+.login-form h2 {
+    display: none; 
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form button {
+    width: 80%; /* Adjust input and button width */
+    margin: 10px auto; /* Center align input and button */
+    height: 32px auto;
+    font-size: 16px;
+}
+
+.signup-link {
+    color: #fff; /* White color for signup link */
+}
