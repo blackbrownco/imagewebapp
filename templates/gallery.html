@@ -1,44 +1,74 @@
-<!-- gallery.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Gallery</title>
-    <style>
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .image {
-            margin: 10px;
-        }
-        .image img {
-            width: 200px;
-            height: auto;
-        }
-    </style>
+    <!-- Include your CSS stylesheets here -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style-gallery.css') }}">
+    <!-- Include the font PT Sans Narrow -->
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>User Gallery</h1>
-    <div class="gallery">
-        {% for image in user_images %}
-            <div class="image">
-                <img src="{{ url_for('static', filename='uploads/' + image[0]) }}" alt="{{ image[0] }}">
-                <a href="{{ url_for('delete', filename=image[0]) }}">Delete</a>
+    <div class="container">
+        <h1>User Gallery</h1>
+        <div class="welcome-msg">Welcome, {{ session['username'] }}</div> 
+
+        <form action="{{ url_for('logout') }}" method="post">
+            <button type="submit">Logout</button>
+        </form>
+        
+        {% if user_images %}
+            <div class="image-gallery">
+                {% for image in user_images %}
+                    <div class="image-container">
+                        <img src="{{ url_for('uploaded_file', user_id=session['user_id'], filename=image[0]) }}" alt="{{ image[0] }}" onclick="zoomImage('{{ image[0] }}')">
+                        <button class="delete-button" onclick="showDeleteConfirmation('{{ image[0] }}')">Delete</button>
+                    </div>
+                {% endfor %}
             </div>
-        {% endfor %}
+        {% else %}
+            <p>No images found.</p>
+        {% endif %}
+        
+        <!-- Upload form -->
+        <form method="POST" enctype="multipart/form-data" class="upload-form">
+            {{ form.csrf_token }}
+            <input type="file" name="image" id="image" accept="image/*" onchange="updateFileName(this)">
+            <label for="image" id="file-label">Choose File</label>
+            <p id="selected-file"></p>
+            <button type="submit">Upload</button>
+        </form>
+
+        <!-- Delete confirmation modal -->
+        <div id="delete-confirm" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="hideDeleteConfirmation()">&times;</span>
+                <p>Are you sure you want to delete this image?</p>
+                <button onclick="deleteImage()">Yes</button>
+                <button onclick="hideDeleteConfirmation()">No</button>
+            </div>
+        </div>
+
+        <!-- Image zoom modal -->
+        <div id="image-zoom-modal" class="modal">
+            <span class="close" onclick="hideImageZoom()">&times;</span>
+            <img id="zoomed-image" class="modal-content" alt="Zoomed Image">
+        </div>
+
+        <!-- Include your JavaScript file -->
+        <script src="{{ url_for('static', filename='gallery-script.js') }}"></script>
     </div>
-    <form method="POST" enctype="multipart/form-data" action="{{ url_for('upload') }}">
-        {{ form.csrf_token }}
-        <div>
-            {{ form.image.label }} {{ form.image }}
-        </div>
-        <div>
-            {{ form.submit }}
-        </div>
-    </form>
-    <a href="{{ url_for('logout') }}">Logout</a>
+
+    <script>
+        function zoomImage(filename) {
+            const modal = document.getElementById('image-zoom-modal');
+            const img = document.getElementById('zoomed-image');
+            const dynamicURL = "{{ url_for('uploaded_file', user_id=session['user_id'], filename='') }}" + filename;
+            img.src = dynamicURL;
+            modal.style.display = 'block';
+        }
+    </script>
+    
 </body>
 </html>

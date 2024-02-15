@@ -5,21 +5,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style-login.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet">
     <title>User Login</title>
 </head>
 <body>
+    <div class="slideshow">
+        {% for image in images %}
+            <img src="{{ url_for('static', filename=image) }}" alt="Slideshow Image" id="slideshow-image">
+        {% endfor %}
+    </div>
+
     <h1>User Login</h1>
+
     <form method="POST">
-        {{ form.csrf_token }}
-        <div>
-            {{ form.username.label }} {{ form.username }}
+        {{ form.hidden_tag() }}
+        <div class="form-group">
+            {{ form.username.label }}<br>
+            {{ form.username(class="form-control") }}<br>
+            {% for error in form.username.errors %}
+                <span style="color: red;">{{ error }}</span><br>
+            {% endfor %}
         </div>
-        <div>
-            {{ form.password.label }} {{ form.password }}
+        <div class="form-group">
+            {{ form.password.label }}<br>
+            {{ form.password(class="form-control") }}<br>
+            {% for error in form.password.errors %}
+                <span style="color: red;">{{ error }}</span><br>
+            {% endfor %}
         </div>
-        <div>
-            {{ form.submit }}
-        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
     </form>
+
+
+    
 </body>
 </html>

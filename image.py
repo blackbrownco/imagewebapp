@@ -12,12 +12,13 @@ def allowed_file(filename):
 
 def upload_image(user_id, image_file):
     """Upload image for the user."""
-    if not os.path.exists(UPLOAD_FOLDER):
-        os.makedirs(UPLOAD_FOLDER)
+    user_folder = os.path.join(UPLOAD_FOLDER, str(user_id))
+    if not os.path.exists(user_folder):
+        os.makedirs(user_folder)
 
     if image_file and allowed_file(image_file.filename):
         filename = secure_filename(image_file.filename)
-        filepath = os.path.join(UPLOAD_FOLDER, filename)
+        filepath = os.path.join(user_folder, filename)
         image_file.save(filepath)
 
         db = connect_to_database()
@@ -48,7 +49,8 @@ def retrieve_images(user_id):
 
 def delete_image(user_id, filename):
     """Delete image for the user."""
-    filepath = os.path.join(UPLOAD_FOLDER, filename)
+    user_folder = os.path.join(UPLOAD_FOLDER, str(user_id))
+    filepath = os.path.join(user_folder, filename)
     if os.path.exists(filepath):
         os.remove(filepath)
 
