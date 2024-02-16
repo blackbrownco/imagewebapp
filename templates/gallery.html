@@ -21,10 +21,12 @@
         {% if user_images %}
             <div class="image-gallery">
                 {% for image in user_images %}
-                    <div class="image-container">
-                        <img src="{{ url_for('uploaded_file', user_id=session['user_id'], filename=image[0]) }}" alt="{{ image[0] }}" onclick="zoomImage('{{ image[0] }}')">
-                        <button class="delete-button" onclick="showDeleteConfirmation('{{ image[0] }}')">Delete</button>
-                    </div>
+                <div class="image-container">
+                    <img src="{{ url_for('uploaded_file', user_id=session['user_id'], filename=image[0]) }}" alt="{{ image[0] }}" onclick="zoomImage('{{ image[0] }}')">
+                    <form action="{{ url_for('delete_image', user_id=session['user_id'], filename=image[0]) }}" method="post">
+                        <button class="delete-button" type="submit">Delete</button>
+                    </form>
+                </div>
                 {% endfor %}
             </div>
         {% else %}

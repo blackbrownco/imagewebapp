@@ -72,7 +72,7 @@ def usergallery():
             if form.validate():  
                 if form.image.data:
                     filename = secure_filename(form.image.data.filename)
-                    if upload_image(user_id, form.image.data):
+                    if upload_image(user_id, session['username'], form.image.data):
                         return redirect(url_for('usergallery'))
                     else:
                         return "Upload failed. Please try again."
@@ -144,14 +144,21 @@ def uploaded_file(user_id, filename):
 #         return "Upload failed. Please try again."
 #     return redirect(url_for('login'))
 
-@app.route('/delete/<filename>')
-def delete(filename):
+@app.route('/delete/<user_id>/<path:filename>', methods=['POST'])
+def delete_image(user_id, filename):
     if 'username' in session:
         user_id = session['user_id']
-        if delete_image(user_id, filename):
-            return redirect(url_for('index'))
-        return "Deletion failed. Please try again."
-    return redirect(url_for('login'))
+        user_folder = os.path.join(os.path.join(UPLOAD_FOLDER, user_id))
+        filepath = os.path.join(UPLOAD_FOLDER, filename)
+        if os.path.exists(filepath):
+            os.remove(filepath)
+            # Also delete the image record from the database if needed
+            flash('Image deleted successfully', 'success')
+        else:
+            flash('Image not found', 'error')
+    else:
+        flash('You must be logged in to delete images', 'error')
+    return redirect(url_for('usergallery'))
 
 if __name__ == '__main__':
     app.run(debug=True)

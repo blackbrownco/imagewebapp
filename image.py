@@ -3,6 +3,7 @@
 import os
 from werkzeug.utils import secure_filename
 from database import connect_to_database
+from datetime import datetime
 
 UPLOAD_FOLDER = 'uploads/'
 
@@ -10,7 +11,7 @@ def allowed_file(filename):
     """Check if the file has an allowed extension."""
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in {'png', 'jpg', 'jpeg'}
 
-def upload_image(user_id, image_file):
+def upload_image(user_id, username, image_file):
     """Upload image for the user."""
     user_folder = os.path.join(UPLOAD_FOLDER, str(user_id))
     if not os.path.exists(user_folder):
@@ -24,7 +25,8 @@ def upload_image(user_id, image_file):
         db = connect_to_database()
         cursor = db.cursor()
         try:
-            cursor.execute("INSERT INTO images (user_id, filename) VALUES (%s, %s)", (user_id, filename))
+            cursor.execute("INSERT INTO images (user_id, username, filename, created_at) VALUES (%s, %s, %s, %s)",
+                           (user_id, username, filename, datetime.now()))
             db.commit()
             return True
         except Exception as e:

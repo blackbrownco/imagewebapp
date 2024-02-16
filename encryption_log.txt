@@ -1,0 +1,130 @@
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 573-836-991
+ERROR:root:Decryption failed for image: sqlinjection-detailDataTransaksi-nohp-mysqlversion.png
+INFO:root:Image decrypted successfully: 1198712-3840x2160-desktop-4k-studio-ghibli-wallpaper.jpg
+ERROR:root:Decryption failed for image: sqlinjection-detailDataTransaksi-nohp-mysqlversion.png
+INFO:root:Image decrypted successfully: studio-ghibli-backgrounds-5.jpg
+INFO:root:Image encrypted and uploaded successfully: wallpaperflare.com_wallpaper.jpg
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:45:09] "[32mPOST /usergallery HTTP/1.1[0m" 302 -
+ERROR:root:Decryption failed for image: sqlinjection-detailDataTransaksi-nohp-mysqlversion.png
+INFO:root:Image decrypted successfully: 1198712-3840x2160-desktop-4k-studio-ghibli-wallpaper.jpg
+ERROR:root:Decryption failed for image: sqlinjection-detailDataTransaksi-nohp-mysqlversion.png
+INFO:root:Image decrypted successfully: studio-ghibli-backgrounds-5.jpg
+INFO:root:Image decrypted successfully: wallpaperflare.com_wallpaper.jpg
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:45:09] "GET /usergallery HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:45:09] "[36mGET /static/style-gallery.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:45:09] "[36mGET /static/gallery-script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:45:09] "GET /uploads/618a2cb3-a803-483b-9211-a7f24352adaf/1198712-3840x2160-desktop-4k-studio-ghibli-wallpaper.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:45:09] "GET /uploads/618a2cb3-a803-483b-9211-a7f24352adaf/wallpaperflare.com_wallpaper.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:45:09] "GET /uploads/618a2cb3-a803-483b-9211-a7f24352adaf/studio-ghibli-backgrounds-5.jpg HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 573-836-991
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:45:41] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:45:41] "[36mGET /static/style-login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:45:41] "[36mGET /static/gambar/gambar1.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:45:41] "[36mGET /static/gambar/gambar2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:45:41] "[36mGET /static/gambar/gambar3.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:45:41] "[36mGET /static/gambar/gambar4.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:45:48] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:root:Image decrypted successfully: sqlinjection-detailDataTransaksi-nohp-mysqlversion.png
+INFO:root:Image decrypted successfully: 1198712-3840x2160-desktop-4k-studio-ghibli-wallpaper.jpg
+INFO:root:Image decrypted successfully: sqlinjection-detailDataTransaksi-nohp-mysqlversion.png
+INFO:root:Image decrypted successfully: studio-ghibli-backgrounds-5.jpg
+INFO:root:Image decrypted successfully: wallpaperflare.com_wallpaper.jpg
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:45:48] "GET /usergallery HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:45:48] "[36mGET /static/style-gallery.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:45:48] "GET /uploads/618a2cb3-a803-483b-9211-a7f24352adaf/sqlinjection-detailDataTransaksi-nohp-mysqlversion.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:45:48] "GET /uploads/618a2cb3-a803-483b-9211-a7f24352adaf/1198712-3840x2160-desktop-4k-studio-ghibli-wallpaper.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:45:48] "GET /uploads/618a2cb3-a803-483b-9211-a7f24352adaf/wallpaperflare.com_wallpaper.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:45:48] "[36mGET /static/gallery-script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:45:48] "GET /uploads/618a2cb3-a803-483b-9211-a7f24352adaf/studio-ghibli-backgrounds-5.jpg HTTP/1.1" 200 -
+INFO:root:Image decrypted successfully: sqlinjection-detailDataTransaksi-nohp-mysqlversion.png
+INFO:root:Image decrypted successfully: 1198712-3840x2160-desktop-4k-studio-ghibli-wallpaper.jpg
+INFO:root:Image decrypted successfully: sqlinjection-detailDataTransaksi-nohp-mysqlversion.png
+INFO:root:Image decrypted successfully: studio-ghibli-backgrounds-5.jpg
+INFO:root:Image decrypted successfully: wallpaperflare.com_wallpaper.jpg
+INFO:root:Image encrypted and uploaded successfully: 1198591-3840x2160-desktop-4k-studio-ghibli-background-photo.jpg
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:45:55] "[32mPOST /usergallery HTTP/1.1[0m" 302 -
+INFO:root:Image decrypted successfully: sqlinjection-detailDataTransaksi-nohp-mysqlversion.png
+INFO:root:Image decrypted successfully: 1198712-3840x2160-desktop-4k-studio-ghibli-wallpaper.jpg
+INFO:root:Image decrypted successfully: sqlinjection-detailDataTransaksi-nohp-mysqlversion.png
+INFO:root:Image decrypted successfully: studio-ghibli-backgrounds-5.jpg
+INFO:root:Image decrypted successfully: wallpaperflare.com_wallpaper.jpg
+INFO:root:Image decrypted successfully: 1198591-3840x2160-desktop-4k-studio-ghibli-background-photo.jpg
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:45:55] "GET /usergallery HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:45:55] "[36mGET /static/style-gallery.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:45:55] "GET /uploads/618a2cb3-a803-483b-9211-a7f24352adaf/sqlinjection-detailDataTransaksi-nohp-mysqlversion.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:45:55] "GET /uploads/618a2cb3-a803-483b-9211-a7f24352adaf/wallpaperflare.com_wallpaper.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:45:55] "GET /uploads/618a2cb3-a803-483b-9211-a7f24352adaf/studio-ghibli-backgrounds-5.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:45:55] "GET /uploads/618a2cb3-a803-483b-9211-a7f24352adaf/1198712-3840x2160-desktop-4k-studio-ghibli-wallpaper.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:45:55] "[36mGET /static/gallery-script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:45:55] "GET /uploads/618a2cb3-a803-483b-9211-a7f24352adaf/1198591-3840x2160-desktop-4k-studio-ghibli-background-photo.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:48:25] "[32mPOST /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:48:25] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:48:25] "[36mGET /static/style-login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:48:25] "[36mGET /static/gambar/gambar1.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:48:25] "[36mGET /static/gambar/gambar2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:48:25] "[36mGET /static/gambar/gambar3.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:48:25] "[36mGET /static/gambar/gambar4.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:48:30] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:48:30] "GET /usergallery HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:48:30] "[36mGET /static/style-gallery.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:48:30] "[36mGET /static/gallery-script.js HTTP/1.1[0m" 304 -
+INFO:root:Image encrypted and uploaded successfully: 1198712-3840x2160-desktop-4k-studio-ghibli-wallpaper.jpg
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:48:36] "[32mPOST /usergallery HTTP/1.1[0m" 302 -
+INFO:root:Image decrypted successfully: 1198712-3840x2160-desktop-4k-studio-ghibli-wallpaper.jpg
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:48:36] "GET /usergallery HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:48:36] "[36mGET /static/style-gallery.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:48:36] "[36mGET /static/gallery-script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:48:36] "GET /uploads/24ff91f9-9054-4619-aecd-b78eadba190b/1198712-3840x2160-desktop-4k-studio-ghibli-wallpaper.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:59:23] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:59:23] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:59:23] "[36mGET /static/gambar/gambar1.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:59:23] "[36mGET /static/gambar/gambar2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:59:23] "[36mGET /static/gambar/gambar3.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:59:23] "[36mGET /static/gambar/gambar4.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:59:23] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:59:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:59:25] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:59:25] "[36mGET /static/gambar/gambar1.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:59:25] "[36mGET /static/gambar/gambar3.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:59:25] "[36mGET /static/gambar/gambar2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:59:25] "[36mGET /static/gambar/gambar4.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:59:25] "GET /static/style-login.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:59:31] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:root:Image decrypted successfully: 1198712-3840x2160-desktop-4k-studio-ghibli-wallpaper.jpg
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:59:31] "GET /usergallery HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:59:31] "GET /static/style-gallery.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:59:31] "GET /static/gallery-script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:59:31] "GET /uploads/24ff91f9-9054-4619-aecd-b78eadba190b/1198712-3840x2160-desktop-4k-studio-ghibli-wallpaper.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 20:59:35] "GET /uploads/24ff91f9-9054-4619-aecd-b78eadba190b/1198712-3840x2160-desktop-4k-studio-ghibli-wallpaper.jpg HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/altodia/Documents/SawitPro/imagestorage/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 573-836-991
+INFO:root:Image decrypted successfully: 1198712-3840x2160-desktop-4k-studio-ghibli-wallpaper.jpg
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 21:00:17] "GET /usergallery HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 21:00:18] "[36mGET /static/style-gallery.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 21:00:18] "[36mGET /static/gallery-script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 21:00:18] "GET /uploads/24ff91f9-9054-4619-aecd-b78eadba190b/1198712-3840x2160-desktop-4k-studio-ghibli-wallpaper.jpg HTTP/1.1" 200 -
+INFO:root:Image decrypted successfully: 1198712-3840x2160-desktop-4k-studio-ghibli-wallpaper.jpg
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 21:01:32] "GET /usergallery HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 21:01:32] "[36mGET /static/style-gallery.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 21:01:32] "[36mGET /static/gallery-script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 21:01:32] "GET /uploads/24ff91f9-9054-4619-aecd-b78eadba190b/1198712-3840x2160-desktop-4k-studio-ghibli-wallpaper.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 21:01:32] "GET /static/gallery-script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 21:01:32] "GET /static/style-gallery.css HTTP/1.1" 200 -
+INFO:root:Image decrypted successfully: 1198712-3840x2160-desktop-4k-studio-ghibli-wallpaper.jpg
+INFO:root:Image encrypted and uploaded successfully: wallpaperflare.com_wallpaper.jpg
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 21:02:06] "[32mPOST /usergallery HTTP/1.1[0m" 302 -
+INFO:root:Image decrypted successfully: 1198712-3840x2160-desktop-4k-studio-ghibli-wallpaper.jpg
+INFO:root:Image decrypted successfully: wallpaperflare.com_wallpaper.jpg
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 21:02:06] "GET /usergallery HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 21:02:07] "[36mGET /static/style-gallery.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 21:02:07] "[36mGET /static/gallery-script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 21:02:07] "GET /uploads/24ff91f9-9054-4619-aecd-b78eadba190b/wallpaperflare.com_wallpaper.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 21:02:07] "GET /uploads/24ff91f9-9054-4619-aecd-b78eadba190b/1198712-3840x2160-desktop-4k-studio-ghibli-wallpaper.jpg HTTP/1.1" 200 -
