@@ -1,0 +1,8 @@
+Flask==2.0.1
+flask_simple_captcha==5.5.4
+Flask_SQLAlchemy==2.5.1
+Flask_WTF==0.14.3
+mysql_connector_repackaged==0.3.1
+python_bcrypt==0.3.2
+Werkzeug==2.0.2
+WTForms==2.2.1
